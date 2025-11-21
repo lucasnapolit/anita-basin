@@ -1,0 +1,15 @@
+{
+  "name": "anita-basin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-prod-test": "npx cypress run --spec cypress/e2e/practice/testEnv.Variables.cy.js --config-file prod.config.js",
+    "cypress-stage-test": "npx cypress run cypress/e2e/practice/testEnv.Variables.cy.js --config-file stage.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
