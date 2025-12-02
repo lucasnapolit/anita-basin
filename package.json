@@ -5,11 +5,15 @@
   "main": "cypress.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-prod-test": "npx cypress run --spec cypress/e2e/practice/testEnv.Variables.cy.js --config-file prod.config.js",
+    "test:challenge1":"npx cypress run --spec cypress/e2e/login/beginer.cy.js",
+    "cypress-prod-test": "npx cypress run --spec cypress/e2e/envTests/testEnv.Variables.cy.js --config-file prod.config.js",
     "cypress-stage-test": "npx cypress run cypress/e2e/practice/testEnv.Variables.cy.js --config-file stage.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2"
+  }
 }
