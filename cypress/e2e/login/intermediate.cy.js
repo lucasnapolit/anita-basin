@@ -25,7 +25,7 @@ describe("intermediate level challenge", () => {
 
 
 
-         it("tc_0 modal happy path",()=>{
+         it("tc_1 modal happy path",()=>{
          cy.get("#openModal").click()  
          cy.wait(2000)
          cy.get("#modalInput").type("tuvieja")
