@@ -13,6 +13,8 @@ jobs:
 
         -  name: cypress run
            uses: cypress-io/github-action@v5
+           
+        - name: Check fail percentage
+          run: node check-fail-percentage.js
 
 
- 
