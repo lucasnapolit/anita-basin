@@ -13,6 +13,12 @@ jobs:
 
         -  name: cypress run
            uses: cypress-io/github-action@v5
+
+        - name: Upload Cypress Videos
+          uses: actions/upload-artifact@v3
+          with:
+            name: html mochawesome reports
+            path: cypress\reports\html
            
        
 
